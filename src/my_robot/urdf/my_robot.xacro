@@ -55,6 +55,12 @@
         <child  link = "hokuyo"/>
     </joint>
 
+    <joint name="camera_optical_joint" type="fixed">
+        <origin xyz = "0 0 0" rpy = "-1.5707 0 -1.5707"/>
+        <parent link = "camera_link"/>
+        <child  link = "camera_link_optical"/>
+    </joint>
+
     <xacro:include filename = "$(find my_robot)/urdf/my_robot.gazebo"/>
 
     <!-- LINKS -->    
@@ -180,6 +186,9 @@
         </inertial>
     </link>
 
+    <link name  = "cameral_ink_optical">
+    </link>
+    
     <link name = "hokuyo">
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />           
