@@ -11,10 +11,10 @@
 
 - **design:** This package contains the robot's design Xacro file, defining the robot's structure, including the chassis, two wheels attached with two hinges, and two fixed casters.
 
-### Sensors:
-- These sensors are attached to the robot's chassis, including a camera and a Hokuyo LIDAR sensor.
+#### Sensors:
+- These sensors are attached to the robot's chassis, including a RGB-D camera and a Hokuyo LIDAR sensor.
 
-### Launch:
+#### Launch:
 - Contains launch files that bring up the robot in the Gazebo simulation environment, incorporating the Xacro design and the Gazebo plugin libgazebo_ros_diff_drive for publishing odometry data, camera images, LIDAR data, and the controller for velocity and angular control in the x, y, and z directions.
 - It also includes an RViz configuration to visualize sensor data.
 
