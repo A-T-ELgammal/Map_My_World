@@ -7,6 +7,8 @@
 ## Project Structure:
 ![Project Structure](screenshots/project_structure.png)
 
+### my_robot package:
+
 - **design:** This package contains the robot's design Xacro file, defining the robot's structure, including the chassis, two wheels attached with two hinges, and two fixed casters.
 
 ### Sensors:
